@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reservation_style.css">
+    <title>Módulo4 Extra: Reserva</title>
+</head>
+<body>
+    <h1>Módulo4 Extra: Reserva en un hotel</h1>
+    <div class="main-container">
+        <div class="form-container">
+            <div>
+                <label for="room-type">Tipo habitación</label>
+                <select name="room-type" id="roomType">
+                    <option value="standard" selected>Standard</option>
+                    <option value="junior">Junior Suite</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div>
+                <label for="spa-service">Incluir Spa</label>
+                <input type="checkbox" name="spa-service" id="spaService">
+            </div>
+            <div>
+                <label for="room-occupants">Ocupación habitación</label>
+                <select name="room-occupants" id="roomOccupants">
+                    <option value="individual">Individual</option>
+                    <option value="doble" selected>Doble</option>
+                    <option value="triple">Triple</option>
+                </select>
+            </div>
+            <label for="nights">Nº noches</label>
+            <input type="number" name="nights" id="numberOfNights" value="1">
+            <label for="parking-nights">Nº noches parking</label>
+            <input type="number" name="parking-nights" id="numberOfParkingNights" value="0">
+            <div class="amount-container"><span class="amount">Total: </span><span id="totalAmount" class="amount">0</span><span class="amount"> &#8364;</span></div>
+        </div>
+        <div class="image-container">
+            <img src="./img/welcome_everybody.jpg" alt="welcome all colors, ages, cultures, sizes and genders">
+        </div>
+    </div>
+    <script src="./js/reservation_apps.js"></script>
+</body>
+</html>
