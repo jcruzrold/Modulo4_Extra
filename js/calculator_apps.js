@@ -33,7 +33,7 @@ let fCalculatorButtonClick = (event) => {
             document.getElementById("screenInput").value = "";
             break
 
-        case "reset-screen-button":
+        case "reset-acumulator-button":
         default:
             document.getElementById("screenInput").value = "";
             nNumberA = 0;
