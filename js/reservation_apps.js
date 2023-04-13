@@ -48,8 +48,8 @@ let fCalcRoomOccupantsFactor = () => {
 let fRecalcReservationAmount = () => {
     let nReservationTotalAmount = 0;
 
-    if(fGetNights() < 1) fSetNights(1);
-    if(fGetParkingNights() < 0) fSetParkingNights(0);
+    if(fGetNights() < 1 || isNaN(fGetNights())) fSetNights(1);
+    if(fGetParkingNights() < 0 || isNaN(fGetParkingNights())) fSetParkingNights(0);
 
     nReservationTotalAmount = fCalcRoomTypeAmount() + (fGetSpaService() ? 20 : 0);
 
